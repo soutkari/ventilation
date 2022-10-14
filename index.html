@@ -25,39 +25,6 @@
 </head>
 <body>
     <time datetime="2022-W41">227</time>
-    <script>
-        (function () {
-            document.head = document.head || document.getElementsByTagName('head')[0];
-            var canvas = document.createElement('canvas'),
-                img = document.createElement('img'),
-                oldLink = document.getElementById('favicon'),
-                link = oldLink.cloneNode(true),
-                week = 441;
-            if (canvas.getContext) {
-                canvas.height = canvas.width = 16;
-                var ctx = canvas.getContext('2d'),
-                    textWidth = ctx.measureText(week).width;
-                img.onload = function () {
-                    ctx.drawImage(this, 0, 0);
-                    ctx.font = 'bold 10px "helvetica", sans-serif';
-                    ctx.fillStyle = '#066EB0';
-                    ctx.fillText(week, (canvas.width / 2) - (textWidth / 2), 12);
-                    link.href = canvas.toDataURL('image/png');
-                    document.head.removeChild(oldLink);
-                    document.head.appendChild(link);
-                };
-                img.src = 'favicon.png';
-            }
-        })();
-
-        setTimeout(function() { location.reload(); }, 66255000);
-
-        (function(v,e,c,k,a,n,u){v['GoogleAnalyticsObject']=a;v[a]=v[a]||function(){
-        (v[a].q=v[a].q||[]).push(arguments)},v[a].l=1*new Date();n=e.createElement(c),
-            u=e.getElementsByTagName(c)[0];n.async=1;n.src=k;u.parentNode.insertBefore(n,u)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-50793010-2', 'auto');
-        ga('send', 'pageview');
-    </script>
+    
 </body>
 </html>
