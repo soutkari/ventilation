@@ -24,7 +24,15 @@
     </style>
 </head>
 <body>
-    <time datetime="2022-W41">240</time>
-    
+    <time datetime="2022-03-01" class="current-days">240</time>
+
 </body>
+<script type="text/javascript">
+
+   var today = new Date();
+   var date_vab = new Date(document.querySelector(".current-days").dateTime);
+   var diff_in_days = (today.getTime() - date_vab.getTime()) / (1000 * 3600 * 24);
+
+   document.querySelector(".current-days").textContent = Math.round(diff_in_days);
+</script>
 </html>
