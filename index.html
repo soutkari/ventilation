@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Läckande element</title>
+    <title>Dagar till sommarsemester</title>
     <link id="favicon" rel="icon" type="image/png" href="favicon.png">
     <style>
         html, body { height: 100%; background-color: #90c0de; overflow: hidden; }
@@ -21,46 +21,17 @@
             line-height: 227px;
             font-weight: bold;
         }
-        text {
-            position: absolute;
-            top: 25%;
-            left: 0;
-            right: 0;
-            margin: -110px 0 0 0;
-            height: 220px;
-            text-align: center;
-            color: #1c7bb7;
-            font-family: Arial, serif;
-            font-size: 60px;
-            line-height: 227px;
-            font-weight: bold;
-        }
-        text1 {
-            position: absolute;
-            top: 75%;
-            left: 0;
-            right: 0;
-            margin: -110px 0 0 0;
-            height: 220px;
-            text-align: center;
-            color: #1c7bb7;
-            font-family: Arial, serif;
-            font-size: 60px;
-            line-height: 227px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-    <text>Dagar med läckande element:</text>
-    <time datetime="2022-12-31" class="current-days">240</time>
+    <time datetime="2024-06-20" class="current-days">240</time>
 
 </body>
 <script type="text/javascript">
 
    var today = new Date();
    var date_vab = new Date(document.querySelector(".current-days").dateTime);
-   var diff_in_days = (today.getTime() - date_vab.getTime()) / (1000 * 3600 * 24);
+   var diff_in_days = (date_vab.getTime() - today.getTime()) / (1000 * 3600 * 24);
 
    document.querySelector(".current-days").textContent = Math.round(diff_in_days);
 </script>
