@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Dagar sedan Per skulle undersöka varför ventilation är kass</title>
+    <title>Dagar kvar att fixa ventilationen</title>
     <link id="favicon" rel="icon" type="image/png" href="favicon.png">
     <style>
         html, body { height: 100%; background-color: #90c0de; overflow: hidden; }
@@ -52,14 +52,14 @@
     </style>
 </head>
 <body>
-    <time datetime="2024-03-23" class="current-days">240</time>
+    <time datetime="2024-10-31" class="current-days">240</time>
 
 </body>
 <script type="text/javascript">
 
    var today = new Date();
-   var date_towel = new Date(document.querySelector(".current-days").dateTime);
-   var diff_in_days = (today.getTime() - date_towel.getTime()) / (1000 * 3600 * 24);
+   var date_vent = new Date(document.querySelector(".current-days").dateTime);
+   var diff_in_days = (today.getTime() - date_vent.getTime()) / (1000 * 3600 * 24);
 
    document.querySelector(".current-days").textContent = Math.round(diff_in_days);
 </script>
